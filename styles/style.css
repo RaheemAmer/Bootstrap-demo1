@@ -1,4 +1,3 @@
-:root {
-    --lg-font: 'Kaisei Tokumin', serif;
-    --sm-font: 'Poppins', sans-serif;
+body {
+    font-family: 'roboto', sans-serif;
 }

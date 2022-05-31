@@ -1,0 +1,56 @@
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+
+/* Button */
+
+.bg-primary {
+    background-color: var(--pink) !important;
+}
+
+
+/* Navbar */
+
+.navbar {
+    box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* Header */
+
+#header {
+    background: url(../assets/images/banner-img-1.jpg) top/cover no-repeat;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
