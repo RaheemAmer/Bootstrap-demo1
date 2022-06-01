@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="manifest" href="/Assets/Logo/site.webmanifest">
-    <title>Lantern</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="/Assets/Logo/favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
@@ -25,15 +24,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./Styles/style.css" />
-    <title>Lantern Agency</title>
+    <title>Green Lantern Agency</title>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./Assets/Logo/favicon.ico" alt="Logo-Image" class="logo animate__heartBeat" title="Lantern's Logo">
+            <a class="navbar-brand" href="#home">
+                <img src="./Assets/Logo/favicon.ico" alt="Logo-Image" class="logo animate__animated animate__fadeInDown " title="Green Lantern's Logo">
             </a>
             <button class="navbar-toggler text-white border-light shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
@@ -41,45 +40,62 @@
             <div class="collapse navbar-collapse " id="main">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 " href="#">Services</a>
+                        <a class="nav-link p-2 p-lg-3 " href="#serices">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 " href="#">Portfolio</a>
+                        <a class="nav-link p-2 p-lg-3 " href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 " href="#">About</a>
+                        <a class="nav-link p-2 p-lg-3 " href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 " href="#">Contact</a>
+                        <a class="nav-link p-2 p-lg-3 " href="#contact">Contact</a>
                     </li>
                 </ul>
-                <a href="" class="btn main-btn rounded-pill shadow-none animate__heartBeat">Login</a>
+                <a href="#login" class="btn main-btn rounded-pill shadow-none animate__heartBeat">Login</a>
             </div>
         </div>
     </nav>
     <!-- End Of Navbar -->
 
     <!-- Landing  -->
-    <div class="landing">
-        <div class="landing-content">
+    <div class="landing ">
+        <div class="landing-content reveal">
             <div class="container-fluid ">
-                <div class="row background-color p-1 justify-content-center ">
+                <div class="row justify-content-center --bg-color ">
                     <div class="col-lg-6">
-                        <div class="landing-content-inner landing-text  ">
-                            <h1 class="landing-title text-center">
-                                <span class="text green-color fw-bolder ">Lantern</span>
-                                <span class="text-muted fw-bold ">Web Design</span>
+                        <div class="landing-content-inner landing-text">
+                            <h1 class="text-center">
+                                <span class="green-color fw-bolder row-sm">
+                                    Green Lantern
+                                    <span class="text-muted fw-bold ">
+                                        Web Design
+                                    </span>
+                                </span>
                             </h1>
-                            <P class="text-center ">Welcome to the place where all your dreams come true.
-                            </P>
-                            <p class="landing-subtitle text-center">
-                                Ready to to get amazed with our services?
+                            <p class="text-center p-2 text-black-50 lh-lg ">
+                                <span>We are a multinational creative web development agency that
+                                    specializes in creating web applications and graphic illustrations
+                                    that are user-friendly and easy to use.
+                                </span>
                             </p>
-                            <div class="landing-btn-group text-center">
-                                <a href="" class="btn main-btn rounded-pill shadow-none">Learn More</a>
+                            <p class="text-center text-black-50 lh-lg">
+                                <span>Are you interested ? </span>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="text-center">
+                                    <a href="#services" class="btn main-btn rounded-pill shadow-none ">
+                                        Get Started
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#contact" class="btn main-btn rounded-pill shadow-none ">
+                                        Contact Us
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,35 +103,70 @@
             </div>
         </div>
     </div>
-    <!-- End Of Landing  -->
+    <!-- End Of Landing -->
 
-    <!-- Content -->
-    <div class="content">
-        <div class="content-content">
-            <div class="container">
-                <div class="row main-content">
-                    <div class="col-lg-6">
-                        <div class="content-content-inner">
-                            <h1 class="content-title text-center">
-                                <span class="text green-color ">Lantern</span>
-                                <span class="text-secondary">Web Design</span>
-                            </h1>
-                            <p class="content-subtitle text-center">
-                                <P class="text-center">Welcome to Lantern Web Design.</P>
-                                <p> We are a creative agency that specializes in creating beautiful and functional websites.
-                                </p>
-                            </p>
-                            <div class="content-btn-group text-center">
-                                <a href="" class="btn main-btn rounded-pill shadow-none">Get Started</a>
-                                <a href="" class="btn main-btn rounded-pill shadow-none">Learn More</a>
+    <!-- Services -->
+    <div class="Services ">
+        <div class="container reveal p-4 ">
+            <div class="main-title">
+                <h1 class="text-center row justify-content-center p-5 position-relative">
+                    <p class="text green-color fw-bolder">
+                        <i class="fa-regular fa-gem fa-2x"></i> Services
+                        <span class="text-muted fw-bold">
+                            We Provide
+                        </span>
+                    </p>
+                </h1>
+            </div>
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="row-conten pt-2">
+                            <div class="icons-holder position-relative">
+                                <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+                                <i class="fa-solid fa-pencil position-absolute bottom-0 icon  fa-4x"></i>
                             </div>
+                            <h4 class="mb-3 mt-3 text-uppercase text-center text-muted">
+                                Graphic illustrations
+                            </h4>
+                            <p class="text-black-50 lh-lg text-center">
+                                We create the best visual content by applying visual hierarchy and page layout techniques, typography and pictures to meet users' specific needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="row-conten pt-2">
+                            <div class="icons-holder position-relative">
+                                <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+                                <i class="fa-solid fa-code position-absolute bottom-0 icon  fa-4x"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase text-center text-muted">
+                                Web Design
+                            </h4>
+                            <p class="text-black-50 lh-lg text-center">
+                                We provide you a quality service with a team of experienced web developers who have been working in the web development industry for over 10 years.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="row-conten pt-2">
+                            <div class="icons-holder position-relative">
+                                <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+                                <i class="fa-solid fa-hourglass position-absolute bottom-0 icon  fa-4x"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase text-center text-muted">
+                                Respect Deadline
+                            </h4>
+                            <p class="text-black-50 lh-lg text-center">
+                                Missing deadlines is more than a simple failure to deliver at a specific date and time. That's why we take a deeper look in the project and make sure that we are on time.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Of Content -->
+    <!-- End Of Services -->
 
     <!------------------------------------------------------>
     <!-- JQuery -->

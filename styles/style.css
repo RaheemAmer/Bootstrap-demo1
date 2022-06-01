@@ -1,6 +1,14 @@
+/* Global */
+
 :root {
     --dark-color: #19283f;
     --green-color: #33d1cc;
+    --bg-color: #c6dbcf;
+    --section-color: #eff7fa;
+}
+
+.--bg-color {
+    background-color: var(--bg-color);
 }
 
 .green-color {
@@ -27,21 +35,45 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    margin: 4px 2px;
+    margin: 4px;
     cursor: pointer;
     border-radius: 5px;
+    opacity: 0.9;
 }
 
 .main-btn:hover {
-    background-color: var(--green-color);
-    color: white;
-    transform: scale(1.1);
-    transition: transform 0.6s;
-    will-change: transform;
+    background-color: var(--green-color) !important;
+    color: white !important;
+    transform: scale(1.1) !important;
+    transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    will-change: transform !important;
+    opacity: 1 !important;
+}
+
+.background-color {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
-/* start Navbar */
+/* End Of Global */
+
+
+/* Navbar */
 
 .navbar {
     background-color: var(--dark-color);
@@ -91,14 +123,6 @@ body {
 
 /* Landing */
 
-.background-color {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 100vh;
-    background-color: #c6dbcf;
-}
-
 .landing-title {
     font-size: 3rem;
     color: var(--green-color);
@@ -107,5 +131,64 @@ body {
     position: relative;
 }
 
+.landing-content-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
 
 /* End Of Landing */
+
+
+/* Services */
+
+.Services {
+    height: 100vh;
+}
+
+.Services .icons-holder {
+    height: 200px;
+}
+
+.Services .icons-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Services .icons-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.Services .icons-holder .icon {
+    color: var(--green-color);
+}
+
+.fa-gem {
+    color: var(--green-color);
+}
+
+.main-title h1::after {
+    content: '';
+    width: 25%;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .main-title h1::after {
+        width: 50%;
+    }
+}
+
+
+/* End Of Services */
