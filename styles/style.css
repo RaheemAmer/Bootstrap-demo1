@@ -18,6 +18,28 @@ body {
     animation-duration: 1s;
 }
 
+.main-btn {
+    background-color: var(--green-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-btn:hover {
+    background-color: var(--green-color);
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    will-change: transform;
+}
+
 
 /* start Navbar */
 
@@ -63,40 +85,26 @@ body {
     will-change: transform;
 }
 
-.main-btn {
-    background-color: var(--green-color);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.main-btn:hover {
-    background-color: var(--green-color);
-    color: white;
-    transform: scale(1.1);
-    transition: transform 0.6s;
-    will-change: transform;
-}
-
 
 /* End Navbar */
 
 
 /* Landing */
 
-.main-content {
+.background-color {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 100vh;
-    background: url(.Assets\Video\Landing-cover.mp4) no-repeat center center fixed;
+    background-color: #c6dbcf;
+}
+
+.landing-title {
+    font-size: 3rem;
+    color: var(--green-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 
