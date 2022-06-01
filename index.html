@@ -2,28 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bondi</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lantern</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
     <!-- Font Awesome CDN-->
-    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Bootstrap Demo</title>
 </head>
 
 <body>
-    <!-- Content -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" alt="Logo-Image" class="logo" title="Lantern's Logo">
+            </a>
+            <button class="navbar-toggler text-white border-light shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 " href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 " href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 " href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 " href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="search p-2 p-lg-3 d-none d-lg-block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="" class="btn btn-primary main-btn rounded-pill">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Navbar -->
 
-    <!-- End Of Content -->
 
+    <!------------------------------------------------------>
     <!-- Isotope CDN -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- JQuery -->
