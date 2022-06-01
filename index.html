@@ -5,28 +5,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/Assets/Logo/site.webmanifest">
     <title>Lantern</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/Assets/Logo/favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
     <!-- Font Awesome CDN-->
-    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css" integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Animate Style CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <title>Lantern Agency</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg  sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo.png" alt="Logo-Image" class="logo" title="Lantern's Logo">
+                <img src="./Assets/Logo/favicon.ico" alt="Logo-Image" class="logo animate__heartBeat" title="Lantern's Logo">
             </a>
             <button class="navbar-toggler text-white border-light shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
@@ -49,27 +54,76 @@
                         <a class="nav-link p-2 p-lg-3 " href="#">Contact</a>
                     </li>
                 </ul>
-                <div class="search p-2 p-lg-3 d-none d-lg-block">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <a href="" class="btn btn-primary main-btn rounded-pill">Login</a>
+                <a href="" class="btn main-btn rounded-pill shadow-none animate__heartBeat">Login</a>
             </div>
         </div>
     </nav>
     <!-- End Of Navbar -->
 
+    <!-- Landing  -->
+    <div class="landing">
+        <div class="landing-content">
+            <div class="container">
+                <div class="row main-content p-1">
+                    <div class="col-lg-6">
+                        <div class="landing-content-inner">
+                            <h1 class="landing-title text-center">
+                                <span class="text green-color">Lantern</span>
+                                <span class="text-secondary">Web Design</span>
+                            </h1>
+                            <P class="text-center pt-2">Welcome to the place where all your dream come true.</P>
+                            <p class="landing-subtitle text-center">
+                                Ready to to get amazed with our services?
+                            </p>
+                            <div class="landing-btn-group text-center">
+                                <a href="" class="btn main-btn rounded-pill shadow-none">Get Started</a>
+                                <a href="" class="btn main-btn rounded-pill shadow-none">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Landing  -->
+
+    <!-- Content -->
+    <div class="content">
+        <div class="content-content">
+            <div class="container">
+                <div class="row main-content">
+                    <div class="col-lg-6">
+                        <div class="content-content-inner">
+                            <h1 class="content-title text-center">
+                                <span class="text green-color">Lantern</span>
+                                <span class="text-secondary">Web Design</span>
+                            </h1>
+                            <p class="content-subtitle text-center">
+                                <P class="text-center">Welcome to Lantern Web Design.</P>
+                                <p> We are a creative agency that specializes in creating beautiful and functional websites.
+                                </p>
+                            </p>
+                            <div class="content-btn-group text-center">
+                                <a href="" class="btn main-btn rounded-pill shadow-none">Get Started</a>
+                                <a href="" class="btn main-btn rounded-pill shadow-none">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Content -->
 
     <!------------------------------------------------------>
-    <!-- Isotope CDN -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- JQuery -->
-    <script src="./assets/jquery/jquery-3.6.0.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap Bundle -->
-    <script src="./assets/bootstrap/js/bootstrap.bundle.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Font Awesome -->
-    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Custom Javascript -->
-    <script src="./script.js "></script>
+    <script src="./Script/script.js"></script>
 </body>
 
 </html>

@@ -3,9 +3,19 @@
     --green-color: #33d1cc;
 }
 
+.green-color {
+    color: var(--green-color);
+}
+
 body {
     font-family: 'roboto', sans-serif;
-    height: 990px;
+}
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: all;
+    animation-duration: 1s;
 }
 
 
@@ -20,14 +30,22 @@ body {
     height: 50px;
 }
 
+.navbar-brand .logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    will-change: transform;
+}
+
 .navbar .navbar-nav .nav-link {
     color: rgb(226, 219, 219);
+    margin: 0px 4px;
 }
 
 .navbar .navbar-nav .nav-link:active,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover {
     color: var(--green-color);
+    box-shadow: #33d1cc 0px 0px 5px;
 }
 
 .navbar .search {
@@ -36,12 +54,50 @@ body {
 
 .navbar .search svg {
     color: var(--green-color);
+    cursor: pointer;
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
-    background-color: #0593fa;
+    background-color: var(--green-color);
     transition: background-color 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.main-btn {
+    background-color: var(--green-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-btn:hover {
+    background-color: var(--green-color);
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    will-change: transform;
 }
 
 
 /* End Navbar */
+
+
+/* Landing */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(.Assets\Video\Landing-cover.mp4) no-repeat center center fixed;
+}
+
+
+/* End Of Landing */
