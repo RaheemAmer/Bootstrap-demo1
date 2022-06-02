@@ -50,6 +50,11 @@ body {
     opacity: 1 !important;
 }
 
+.main-btn:focus {
+    background-color: var(--green-color) !important;
+    color: white !important;
+}
+
 .background-color {
     display: flex;
     justify-content: start;
@@ -67,6 +72,17 @@ body {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+.icons-holder svg {
+    color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+::selection {
+    background-color: var(--green-color);
+    color: white;
 }
 
 
@@ -100,6 +116,7 @@ body {
 .navbar .navbar-nav .nav-link:hover {
     color: var(--green-color);
     box-shadow: #33d1cc 0px 0px 5px;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar .search {
@@ -122,6 +139,10 @@ body {
 
 
 /* Landing */
+
+.landing {
+    height: 100vh;
+}
 
 .landing-title {
     font-size: 3rem;
@@ -147,10 +168,6 @@ body {
 
 /* Services */
 
-.Services {
-    height: 100vh;
-}
-
 .Services .icons-holder {
     height: 200px;
 }
@@ -166,10 +183,6 @@ body {
 }
 
 .Services .icons-holder .icon {
-    color: var(--green-color);
-}
-
-.fa-gem {
     color: var(--green-color);
 }
 
@@ -192,3 +205,57 @@ body {
 
 
 /* End Of Services */
+
+
+/* Portfolio */
+
+.Portfolio {
+    height: 100vh;
+    color: white;
+}
+
+.Portfolio .container-fluid {
+    background-color: var(--bg-color);
+}
+
+.Portfolio ul li {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.Portfolio ul .active {
+    background-color: var(--green-color);
+    box-shadow: #33d1cc 0px 0px 5px;
+}
+
+.Portfolio ul li:active,
+.Portfolio ul li:hover,
+.Portfolio ul li:focus {
+    background-color: var(--green-color);
+    box-shadow: #33d1cc 0px 0px 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Portfolio .box {
+    overflow: hidden;
+    position: relative;
+    background-color: var(--bg-color);
+    border: 2px solid var(--dark-color);
+}
+
+.Portfolio .box img {
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.Portfolio .box img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    border: 2px solid var(--dark-color);
+}
+
+
+/* End Of Portfolio */
